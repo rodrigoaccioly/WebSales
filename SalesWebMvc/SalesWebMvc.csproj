@@ -4,4 +4,113 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Models\DbContext.cs" />
+      <Compile Remove="SalesWebMvcContext.cs" />
+      <Compile Remove="Migrations\**" />
+      <Compile Remove="Context\**" />
+      <Compile Remove="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs" />
+      <Compile Remove="obj\Debug\net5.0\SalesWebMvc.AssemblyInfo.cs" />
+      <Compile Remove="obj\Debug\net5.0\SalesWebMvc.RazorAssemblyInfo.cs" />
+      <Compile Remove="obj\Debug\net5.0\SalesWebMvc.RazorTargetAssemblyInfo.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.0-alpha.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Migrations\**" />
+      <EmbeddedResource Remove="Context\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Migrations\**" />
+      <None Remove="Context\**" />
+      <None Remove="obj\Debug\net5.0\project.razor.json" />
+      <None Remove="obj\Debug\net5.0\ref\SalesWebMvc.dll" />
+      <None Remove="obj\Debug\net5.0\staticwebassets\SalesWebMvc.StaticWebAssets.Manifest.cache" />
+      <None Remove="obj\Debug\net5.0\staticwebassets\SalesWebMvc.StaticWebAssets.xml" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.AssemblyInfoInputs.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.assets.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.csproj.CopyComplete" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.csproj.CoreCompileInputs.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.csproj.FileListAbsolute.txt" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.csprojAssemblyReference.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.dll" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.GeneratedMSBuildEditorConfig.editorconfig" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.genruntimeconfig.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.MvcApplicationPartsAssemblyInfo.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.pdb" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.RazorAssemblyInfo.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.RazorCoreGenerate.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.RazorTargetAssemblyInfo.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.TagHelpers.input.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.TagHelpers.output.cache" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.Views.dll" />
+      <None Remove="obj\Debug\net5.0\SalesWebMvc.Views.pdb" />
+      <None Remove="obj\project.assets.json" />
+      <None Remove="obj\project.nuget.cache" />
+      <None Remove="obj\project.packagespec.json" />
+      <None Remove="obj\rider.project.restore.info" />
+      <None Remove="obj\SalesWebMvc.csproj.EntityFrameworkCore.targets" />
+      <None Remove="obj\SalesWebMvc.csproj.nuget.dgspec.json" />
+      <None Remove="obj\SalesWebMvc.csproj.nuget.g.props" />
+      <None Remove="obj\SalesWebMvc.csproj.nuget.g.targets" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Migrations\**" />
+      <Content Remove="Context\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Include="Migrations\20210414160846_initial.cs" />
+      <Compile Include="Migrations\20210414160846_initial.Designer.cs" />
+      <Compile Include="Migrations\SalesWebMvcContextModelSnapshot.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="SalesWebMvc.csproj" />
+      <None Include="bin\Debug\net5.0\ref\SalesWebMvc.dll" />
+      <None Include="bin\Debug\net5.0\appsettings.Development.json" />
+      <None Include="bin\Debug\net5.0\appsettings.json" />
+      <None Include="bin\Debug\net5.0\Humanizer.dll" />
+      <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+      <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll" />
+      <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
+      <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+      <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+      <None Include="bin\Debug\net5.0\MySqlConnector.dll" />
+      <None Include="bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.deps.json" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.dll" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.pdb" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.runtimeconfig.dev.json" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.runtimeconfig.json" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.Views.dll" />
+      <None Include="bin\Debug\net5.0\SalesWebMvc.Views.pdb" />
+      <None Include="bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    </ItemGroup>
 </Project>
