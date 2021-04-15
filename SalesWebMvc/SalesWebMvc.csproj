@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <Folder Include="Models\" />
+      <Folder Include="Models\Enums\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -113,5 +114,7 @@
       <Compile Include="Migrations\20210415140333_initial.cs" />
       <Compile Include="Migrations\20210415140333_initial.Designer.cs" />
       <Compile Include="Migrations\SalesWebMvcContextModelSnapshot.cs" />
+      <Compile Include="Migrations\20210415155014_OtherEntities.cs" />
+      <Compile Include="Migrations\20210415155014_OtherEntities.Designer.cs" />
     </ItemGroup>
 </Project>
