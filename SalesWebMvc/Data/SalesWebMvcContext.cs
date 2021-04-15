@@ -10,6 +10,6 @@ namespace SalesWebMvc.Data
         {
         }
 
-        public DbSet<Departament> Departaments { get; set; }
+        public DbSet<Departament> Departament { get; set; }
     }
 }

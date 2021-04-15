@@ -40,6 +40,7 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.0-alpha.2" />
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -87,11 +88,6 @@
       <Content Remove="Context\**" />
     </ItemGroup>
     <ItemGroup>
-      <Compile Include="Migrations\20210414160846_initial.cs" />
-      <Compile Include="Migrations\20210414160846_initial.Designer.cs" />
-      <Compile Include="Migrations\SalesWebMvcContextModelSnapshot.cs" />
-    </ItemGroup>
-    <ItemGroup>
       <None Include="SalesWebMvc.csproj" />
       <None Include="bin\Debug\net5.0\ref\SalesWebMvc.dll" />
       <None Include="bin\Debug\net5.0\appsettings.Development.json" />
@@ -112,5 +108,10 @@
       <None Include="bin\Debug\net5.0\SalesWebMvc.Views.dll" />
       <None Include="bin\Debug\net5.0\SalesWebMvc.Views.pdb" />
       <None Include="bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Include="Migrations\20210415140333_initial.cs" />
+      <Compile Include="Migrations\20210415140333_initial.Designer.cs" />
+      <Compile Include="Migrations\SalesWebMvcContextModelSnapshot.cs" />
     </ItemGroup>
 </Project>

@@ -27,7 +27,7 @@ namespace SalesWebMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departaments");
+                    b.ToTable("Departament");
                 });
 #pragma warning restore 612, 618
         }
