@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using SalesWebMvc.Data;
+using SalesWebMvc.Models;
 
 namespace SalesWebMvc
 {
@@ -35,6 +36,8 @@ namespace SalesWebMvc
                         mySqlOptions => mySqlOptions
                             .CharSetBehavior(CharSetBehavior.NeverAppend))
                     .EnableDetailedErrors());
+
+            services.AddScoped<SeedingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
