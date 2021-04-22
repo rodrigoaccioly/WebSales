@@ -32,7 +32,7 @@ namespace SalesWebMvc
             services.AddDbContextPool<SalesWebMvcContext>(
                 dbContextOptions => dbContextOptions
                     .UseMySql(
-                        "server=localhost;database=salewebapp;user=root;password=salewebapp;",
+                        "server=localhost;database=saleswebapp;user=root;password=salewebapp;",
                         new MariaDbServerVersion(new Version(10, 5, 9)), // use MariaDbServerVersion for MariaDB
                         mySqlOptions => mySqlOptions
                             .CharSetBehavior(CharSetBehavior.NeverAppend))
